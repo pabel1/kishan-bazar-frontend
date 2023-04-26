@@ -1,0 +1,56 @@
+
+.circular_progress_bar {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.CircularProgressbar {
+  width: 4rem !important;
+  overflow: visible;
+}
+.CircularProgressbar-path {
+  stroke: #00a34d !important;
+  stroke-width: 1rem !important;
+  /* filter: drop-shadow(0.4rem 0.6rem 0.8rem white); */
+  filter: drop-shadow(-5px 6px 24px rgba(0, 163, 77, 0.5));
+}
+.CircularProgressbar-trail {
+  display: none;
+}
+.CircularProgressbar-text {
+  fill: #00a34d !important;
+}
+.chartContainer {
+  width: 70%;
+}
+.scroll-to-top {
+  background-color: white;
+  right: 40px;
+  bottom: 110px !important;
+  position: fixed;
+  cursor: pointer;
+  border-radius: 7px;
+  width: 40px;
+  height: 40px;
+  box-shadow: 0 9px 25px 0 rgb(132 128 177 / 28%);
+  border: none;
+}
+
+
+@media only screen and (max-width: 768px) {
+  .chartContainer {
+    width: 90%;
+  }
+}
+
+/* pagination class */
+.pagination_box > .pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem 2rem;
+  row-gap: 4rem;
+}
